@@ -1,0 +1,11 @@
+D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\bin\Debug\GeoToolkit.dll.log4net
+D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\bin\Debug\GeoToolkitTest.dll
+D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\bin\Debug\GeoToolkitTest.pdb
+D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\bin\Debug\GeoToolkit.dll
+D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\bin\Debug\nunit.framework.dll
+D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\bin\Debug\BLToolkit.4.dll
+D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\bin\Debug\GeoToolkit.pdb
+D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\bin\Debug\nunit.framework.xml
+D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\obj\Debug\GeoToolkitTest.csprojResolveAssemblyReference.cache
+D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\obj\Debug\GeoToolkitTest.dll
+D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\obj\Debug\GeoToolkitTest.pdb

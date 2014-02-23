@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B39F1227-3C23-476C-9904-4400ADC84863}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoToolkit</RootNamespace>
+    <AssemblyName>GeoToolkit</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BLToolkit.4, Version=4.1.21.0, Culture=neutral, PublicKeyToken=b1d3f6ab3aadaca3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\BLToolkit.4.1.21\lib\net40-full\BLToolkit.4.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access\AsyncUpdater.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Access\AsyncUpdaterTT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Access\AsyncUpdaterTTT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Access\IUpdatable.cs" />
+    <Compile Include="Access\IUpdatableT.cs" />
+    <Compile Include="Access\IUpdatableTT.cs" />
+    <Compile Include="Access\UpdatableObjectBase.cs" />
+    <Compile Include="Access\UpdatableObjectBaseT.cs" />
+    <Compile Include="Access\UpdatableObjectBaseTT.cs" />
+    <Compile Include="Access\UpdatedEventArgs.cs" />
+    <Compile Include="Access\UpdatedEventArgsT.cs" />
+    <Compile Include="Access\UpdatingCancelledException.cs" />
+    <Compile Include="Access\UpdatingEventArgs.cs" />
+    <Compile Include="Access\UpdatingEventArgsT.cs" />
+    <Compile Include="Assembly.cs" />
+    <Compile Include="BuzinessObjects\PhoneNumber.cs" />
+    <Compile Include="BuzinessObjects\PhoneNumberPart.cs" />
+    <Compile Include="CancelableEventArgs.cs" />
+    <Compile Include="Collections\SyncronizedDictionaryTT.cs" />
+    <Compile Include="Commands\CommandBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Commands\CommandBaseT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Commands\CommandExecutedEventArgs.cs" />
+    <Compile Include="Commands\CommandExecutingEventArgs.cs" />
+    <Compile Include="Commands\CommandExecutingEventArgsT.cs" />
+    <Compile Include="Commands\CommandExecutingException.cs" />
+    <Compile Include="Commands\CommandFactoryBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Commands\CommandStatusChangedEventArgs.cs" />
+    <Compile Include="Commands\ControlCommandBaseT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Commands\GeneralCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Commands\GeneralCommandFactory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Commands\GeneralCommandT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Compression\GZipHelper.cs" />
+    <Compile Include="EnumValueAttribute.cs" />
+    <Compile Include="Extensions\ArrayExtension.cs" />
+    <Compile Include="Extensions\EnumerableExtension.cs" />
+    <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="FuzzyLogic\FuzzyStringComparer.cs" />
+    <Compile Include="FuzzyLogic\StringDistance.cs" />
+    <Compile Include="GenericContainerT.cs" />
+    <Compile Include="JetBrains\Annotations.cs" />
+    <Compile Include="Logging\LogHelper.cs" />
+    <Compile Include="Net\HttpConnector.cs" />
+    <Compile Include="PendingToken.cs" />
+    <Compile Include="PendingTokenLockedException.cs" />
+    <Compile Include="Persistance\IsolatedStorageStorage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialization\BinaryFormatterHelper.cs" />
+    <Compile Include="Serialization\JsonFormatterHelper.cs" />
+    <Compile Include="Serialization\XmlSerializer.cs" />
+    <Compile Include="Persistance\DbStorage.cs" />
+    <Compile Include="Persistance\FileStorage.cs" />
+    <Compile Include="Persistance\FileStorageSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>FileStorageSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Persistance\HttpContextCacheStorage.cs" />
+    <Compile Include="Persistance\IStorage.cs" />
+    <Compile Include="Persistance\SessionStorage.cs" />
+    <Compile Include="Persistance\PersistanceManager.cs" />
+    <Compile Include="Persistance\PersistanceManagerObject.cs" />
+    <Compile Include="Persistance\StoreManagerObjectDataAccessor.cs" />
+    <Compile Include="StringValidator.cs" />
+    <Compile Include="UrlBuilder.cs" />
+    <Compile Include="ValuedEnum.cs" />
+    <Compile Include="ValuedEnumT.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="GeoToolkit.dll.log4net">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Persistance\FileStorageSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>FileStorageSettings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Library\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
