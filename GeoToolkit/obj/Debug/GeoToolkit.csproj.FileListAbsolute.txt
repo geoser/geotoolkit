@@ -19,6 +19,5 @@ C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\log4net.dll
 C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\nunit.framework.dll
 C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\log4net.xml
 C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\nunit.framework.xml
-C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\obj\Debug\GeoToolkit.csprojResolveAssemblyReference.cache
 C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\obj\Debug\GeoToolkit.dll
 C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\obj\Debug\GeoToolkit.pdb
