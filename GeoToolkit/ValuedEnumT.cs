@@ -50,12 +50,26 @@ namespace GeoToolkit
 
         public static TEnum Parse(string value)
         {
-            foreach (KeyValuePair<string, string> enumValue in _enumValues)
-                if (enumValue.Value == value)
-                    return (TEnum) Enum.Parse(typeof (TEnum), enumValue.Key);
+            TEnum result;
+
+            if (TryParse(value, out result))
+                return result;
 
             throw new InvalidOperationException(string.Format("Cannot parse value {0} to type {1}",
                                                               value, typeof (TEnum)));
+        }
+
+        public static bool TryParse(string value, out TEnum result)
+        {
+            foreach (KeyValuePair<string, string> enumValue in _enumValues)
+                if (enumValue.Value == value)
+                {
+                    result = (TEnum)Enum.Parse(typeof(TEnum), enumValue.Key);
+                    return true;
+                }
+
+            result = default(TEnum);
+            return false;
         }
 
 	    #region IEquatable
@@ -84,7 +98,7 @@ namespace GeoToolkit
 
 	    #endregion
 
-	    #region Orerators
+	    #region Operators
 
 	    public static implicit operator ValuedEnum<TEnum>(TEnum enumValue)
 	    {
@@ -96,32 +110,32 @@ namespace GeoToolkit
 	        return valued.Value;
 	    }
 
-	    public static bool operator ==(ValuedEnum<TEnum> left, ValuedEnum<TEnum> right)
+	    public static bool operator == (ValuedEnum<TEnum> left, ValuedEnum<TEnum> right)
 	    {
 	        return Equals(left, right);
 	    }
 
-	    public static bool operator !=(ValuedEnum<TEnum> left, ValuedEnum<TEnum> right)
+	    public static bool operator != (ValuedEnum<TEnum> left, ValuedEnum<TEnum> right)
 	    {
 	        return !Equals(left, right);
 	    }
 
-	    public static bool operator ==(TEnum left, ValuedEnum<TEnum> right)
+	    public static bool operator == (TEnum left, ValuedEnum<TEnum> right)
 	    {
 	        return Equals(left, right.Value);
 	    }
 
-	    public static bool operator !=(TEnum left, ValuedEnum<TEnum> right)
+	    public static bool operator != (TEnum left, ValuedEnum<TEnum> right)
 	    {
 	        return !Equals(left, right.Value);
 	    }
 
-	    public static bool operator ==(ValuedEnum<TEnum> left, TEnum right)
+	    public static bool operator == (ValuedEnum<TEnum> left, TEnum right)
 	    {
 	        return Equals(left.Value, right);
 	    }
 
-	    public static bool operator !=(ValuedEnum<TEnum> left, TEnum right)
+	    public static bool operator != (ValuedEnum<TEnum> left, TEnum right)
 	    {
 	        return !Equals(left.Value, right);
 	    }

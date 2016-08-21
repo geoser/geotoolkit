@@ -94,5 +94,12 @@ namespace GeoToolkitTest
 			TestEnumFlags testEnumFlags = TestEnumFlags.Value1 | TestEnumFlags.Value2;
 			Assert.AreEqual("ValueAttribute1, Value2", ((ValuedEnum<TestEnumFlags>)testEnumFlags).ToValueString());
 		}
+
+        public void ParseTest()
+        {
+            Assert.AreEqual(TestEnum.Value1, ValuedEnum.Parse<TestEnum>("ValueAttribute1"));
+            Assert.AreEqual(TestEnum.Value1, ValuedEnum.Parse<TestEnum>("Value1"));
+            Assert.AreEqual(TestEnum.Value2, ValuedEnum.Parse<TestEnum>("Value2"));
+        }
 	}
 }

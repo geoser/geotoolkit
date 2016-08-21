@@ -66,22 +66,22 @@ namespace GeoToolkitTest
 		[TestMethod]
 		public void UrlBuilder()
 		{
-			UrlBuilder target = new UrlBuilder("http://somesite.com/somefolder/somepage.aspx?param1=aaa&param2=bbb");
+			UrlBuilder target = new UrlBuilder(@"http://somesite.com/somefolder/somepage.aspx?param1=aaa&param2=bbb");
 
 			Assert.AreEqual(target["param1"], "aaa");
 			Assert.IsNull(target["param3"]);
 
 			target["param1"] = "ccc";
-			Assert.AreEqual("http://somesite.com/somefolder/somepage.aspx?param1=ccc&param2=bbb", target.ToString());
+			Assert.AreEqual(@"http://somesite.com/somefolder/somepage.aspx?param1=ccc&param2=bbb", target.ToString());
 
 			target["param1"] = null;
-			Assert.AreEqual("http://somesite.com/somefolder/somepage.aspx?param2=bbb", target.ToString());
+			Assert.AreEqual(@"http://somesite.com/somefolder/somepage.aspx?param2=bbb", target.ToString());
 
 			target["param2"] = null;
-			Assert.AreEqual("http://somesite.com/somefolder/somepage.aspx", target.ToString());
+			Assert.AreEqual(@"http://somesite.com/somefolder/somepage.aspx", target.ToString());
 
 			target["param3"] = "ddd";
-			Assert.AreEqual("http://somesite.com/somefolder/somepage.aspx?param3=ddd", target.ToString());
+			Assert.AreEqual(@"http://somesite.com/somefolder/somepage.aspx?param3=ddd", target.ToString());
 		}
 	}
 }

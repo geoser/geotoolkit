@@ -9,10 +9,10 @@ using NUnit.Framework;
 namespace GeoToolkit
 {
     public static class ValuedEnum
-	{
+    {
         private const FieldAttributes _ENUM_FIELDS = FieldAttributes.Public | FieldAttributes.Static | FieldAttributes.Literal;
 
-	    private static readonly ConcurrentDictionary<Type, Dictionary<string, string>> _valueCache =
+        private static readonly ConcurrentDictionary<Type, Dictionary<string, string>> _valueCache =
             new ConcurrentDictionary<Type, Dictionary<string, string>>();
 
         public static string ToValueString(this Enum value)
@@ -20,10 +20,10 @@ namespace GeoToolkit
             return GetStringValue(value.ToString(), GetEnumValues(value.GetType()));
         }
 
-		public static string GetValue<T>(T enumValue) where T : struct
-		{
-			return ValuedEnum<T>.GetValue(enumValue);
-		}
+        public static string GetValue<T>(T enumValue) where T : struct
+        {
+            return ValuedEnum<T>.GetValue(enumValue);
+        }
 
         public static string[] GetValues<T>() where T : struct
         {
@@ -31,12 +31,12 @@ namespace GeoToolkit
         }
 
         internal static Dictionary<string, string> GetEnumValues(Type type)
-	    {
-	        if (type == null)
-	            throw new ArgumentNullException("type");
+        {
+            if (type == null)
+                throw new ArgumentNullException("type");
 
-	        if (!type.IsEnum)
-	            throw new ArgumentException(String.Format("Type {0} is not enum", type.FullName));
+            if (!type.IsEnum)
+                throw new ArgumentException(String.Format("Type {0} is not enum", type.FullName));
 
             Dictionary<string, string> result;
 
@@ -65,29 +65,34 @@ namespace GeoToolkit
 
                                   return res;
                               });
-	    }
+        }
 
         internal static string GetStringValue(string value, Dictionary<string, string> enumValues)
-	    {
-	        if (value == null)
-	            throw new ArgumentNullException("value");
+        {
+            if (value == null)
+                throw new ArgumentNullException("value");
 
-	        if (enumValues == null)
-	            throw new ArgumentNullException("enumValues");
+            if (enumValues == null)
+                throw new ArgumentNullException("enumValues");
 
-	        var builder = new StringBuilder();
+            var builder = new StringBuilder();
 
-	        foreach (string v in value.Replace(" ", String.Empty).Split(','))
-	            builder.AppendFormat("{0}, ", enumValues.ContainsKey(v) ? enumValues[v] : v);
+            foreach (string v in value.Replace(" ", string.Empty).Split(','))
+                builder.AppendFormat("{0}, ", enumValues.ContainsKey(v) ? enumValues[v] : v);
 
-	        return builder.Length > 0 ? builder.ToString().TrimEnd(' ', ',') : String.Empty;
-	    }
+            return builder.Length > 0 ? builder.ToString().TrimEnd(' ', ',') : string.Empty;
+        }
 
         public static TEnum Parse<TEnum>(string value) where TEnum : struct
         {
             return ValuedEnum<TEnum>.Parse(value);
         }
-	}
+
+        public static bool TryParse<TEnum>(string value, out TEnum result) where TEnum : struct
+        {
+            return ValuedEnum<TEnum>.TryParse(value, out result);
+        }
+    }
 
 #if DEBUG
 

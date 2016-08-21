@@ -10,3 +10,15 @@ D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkit\bin\Debug\nunit.framework.xml
 D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkit\obj\Debug\GeoToolkit.csprojResolveAssemblyReference.cache
 D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkit\obj\Debug\GeoToolkit.dll
 D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkit\obj\Debug\GeoToolkit.pdb
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\GeoToolkit.dll.log4net
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\GeoToolkit.dll.config
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\GeoToolkit.dll
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\GeoToolkit.pdb
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\BLToolkit.4.dll
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\log4net.dll
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\nunit.framework.dll
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\log4net.xml
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\bin\Debug\nunit.framework.xml
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\obj\Debug\GeoToolkit.csprojResolveAssemblyReference.cache
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\obj\Debug\GeoToolkit.dll
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkit\obj\Debug\GeoToolkit.pdb

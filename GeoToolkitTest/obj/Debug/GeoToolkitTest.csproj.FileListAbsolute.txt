@@ -9,3 +9,17 @@ D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\bin\Debug\nunit.framework.
 D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\obj\Debug\GeoToolkitTest.csprojResolveAssemblyReference.cache
 D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\obj\Debug\GeoToolkitTest.dll
 D:\geoser\SkyDrive\Projects\GeoToolkit\GeoToolkitTest\obj\Debug\GeoToolkitTest.pdb
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\bin\Debug\GeoToolkit.dll.log4net
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\bin\Debug\GeoToolkitTest.dll
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\bin\Debug\GeoToolkitTest.pdb
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\bin\Debug\GeoToolkit.dll
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\bin\Debug\nunit.framework.dll
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\bin\Debug\log4net.dll
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\bin\Debug\BLToolkit.4.dll
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\bin\Debug\GeoToolkit.pdb
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\bin\Debug\nunit.framework.xml
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\bin\Debug\log4net.xml
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\obj\Debug\GeoToolkitTest.csprojResolveAssemblyReference.cache
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\obj\Debug\GeoToolkitTest.dll
+C:\Users\sergepav\Source\Repos\geotoolkit\GeoToolkitTest\obj\Debug\GeoToolkitTest.pdb
